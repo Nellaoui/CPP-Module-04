@@ -15,7 +15,7 @@ class Animal
 		Animal( Animal const & src );
 		~Animal();
 
-		virtual void makeSound() const = 0; // no implementation in the base class.
+		virtual void makeSound() const; // no implementation in the base class.
 		virtual std::string getType() const;
 		Animal &		operator=( Animal const & rhs );
 	private:

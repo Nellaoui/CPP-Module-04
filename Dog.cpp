@@ -6,11 +6,13 @@
 
 Dog::Dog()
 {
+	std::cout << "Dog : Default Constructor" << std::endl;
 	type = "Dog";
 }
 
 Dog::Dog( const Dog & src )
 {
+	std::cout << "Dog : Copy Constructor";
 	*this = src;
 }
 
@@ -21,6 +23,7 @@ Dog::Dog( const Dog & src )
 
 Dog::~Dog()
 {
+	std::cout << "Dog : Destructor";
 }
 
 
@@ -36,6 +39,7 @@ Dog &				Dog::operator=( Dog const & rhs )
 {
 	if ( this != &rhs )
 	{
+		std::cout << "Dog : Copy Assignement Called";
 		this->type = rhs.getType();
 	}
 	return *this;

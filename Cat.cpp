@@ -6,11 +6,13 @@
 
 Cat::Cat()
 {
+	std::cout << "Cat : Default Constructor" << std::endl;
 	type = "Cat";
 }
 
 Cat::Cat( const Cat & src )
 {
+	std::cout << "Cat : Copy Constructor" << std::endl;
 	*this = src;
 }
 
@@ -21,6 +23,7 @@ Cat::Cat( const Cat & src )
 
 Cat::~Cat()
 {
+	std::cout << "Cat : Destructor" << std::endl;
 }
 
 
@@ -35,6 +38,7 @@ std::string	Cat::getType() const
 
 Cat &				Cat::operator=( Cat const & rhs )
 {
+	std::cout << "Cat : Copy Assignement Called" << std::endl;
 	if ( this != &rhs )
 	{
 		this->type = rhs.getType();
