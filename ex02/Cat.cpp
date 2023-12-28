@@ -8,6 +8,7 @@ Cat::Cat()
 {
 	std::cout << "Cat : Default Constructor" << std::endl;
 	type = "Cat";
+	brain = new Brain();
 }
 
 Cat::Cat( const Cat & src )
@@ -24,6 +25,7 @@ Cat::Cat( const Cat & src )
 Cat::~Cat()
 {
 	std::cout << "Cat : Destructor" << std::endl;
+	delete brain;
 }
 
 

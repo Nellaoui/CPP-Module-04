@@ -3,6 +3,8 @@
 
 # include <iostream>
 # include <string>
+#include "Brain.hpp"
+
 
 class Animal
 {
@@ -21,7 +23,5 @@ class Animal
 	private:
 
 };
-
-// std::ostream &			operator<<( std::ostream & o, Animal const & i );
 
 #endif /* ********************************************************** ANIMAL_H */
